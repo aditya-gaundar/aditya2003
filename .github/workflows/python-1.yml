@@ -1,0 +1,19 @@
+name: Python application
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: ls -a
+      - run: pwd
+      - run: touch gitaction
+      - name: list
+        run: ls
+        
+   
